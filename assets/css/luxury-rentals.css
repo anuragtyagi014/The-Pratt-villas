@@ -1,0 +1,323 @@
+ label {
+     display: inline-block;
+     margin-bottom: 0.25rem;
+     font-size: 12px;
+}
+  .theme__form-control {
+     padding: 5px 25px 5px 0;
+     font-size: 12px;
+     height: 34px;
+     background: #fff;
+     border: 0px;
+     
+}
+
+.onl-date{
+    cursor: pointer;
+    padding-right: 0px!important;
+}
+
+ .theme__form-control::placeholder {
+    color: #000;
+}
+
+ .header-v2 {
+    /* position: sticky;*/
+     background: #fff;
+     z-index: 4;
+     padding: 7.5px 0;
+}
+#main {
+    position: relative;
+}
+
+.booking-categories__section {
+    margin-top: 15px;
+    border-top: 0px solid #e2e2e2;
+    padding-top: 0px;
+}
+
+ .header-v2 .header-v2__logo img {
+     filter: invert(1);
+}
+
+.dd-container, .filter-container {
+     position: relative;
+}
+ .dd-btn {
+     background-color: #000;
+     color: #fff;
+     padding: 10px 16px;
+     border: #555;
+     border: none;
+     cursor: pointer;
+     border-radius: 2rem;
+     display: flex;
+     gap: 12px;
+}
+ .dd-btn i {
+     pointer-events: none;
+     font-size: 18px;
+}
+ .dd-menu {
+     position: absolute;
+     top: 100%;
+     left: auto;
+     right: 0;
+     background-color: #fff;
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     border: 1px solid #ddd;
+     z-index: 10;
+     display: none;
+     min-width: 200px;
+     overflow: hidden;
+     border-radius: 0.5rem;
+}
+ .dd-menu li a {
+     color: #222;
+     padding: 10px;
+     border: 0;
+     margin: 0;
+     text-decoration: none;
+     display: block;
+     border-radius: 0.5rem;
+     transition: 0.2s ease;
+}
+ .dd-menu li hr {
+     margin-bottom: 0.25rem;
+     margin-top: 0.25rem;
+}
+ .dd-menu li a:hover {
+     background-color: #f2f2f2;
+}
+ .searching_column {
+    padding: 0 10px;
+    border-right: 1px solid #e4e4e4;
+}
+
+.searcing__row {
+    box-shadow: 0px 1px 10px #ccc;
+    border-radius: 40px;
+    padding: 0px 0px 0px 10px;
+}
+
+.searching_column {
+    width: 25%;
+}
+
+ .searching_column:last-child {
+    border: 0px;
+}
+
+  #addedFieldsModals {
+     display: none;
+}
+/*modal*/
+  .modal-button {
+     background: rgb(236, 44, 54);
+     padding: 10px;
+     color: #fff;
+     border: 0;
+     border-radius: 0.3rem;
+}
+  .button:hover {
+     background: #ef3942;
+     cursor: pointer;
+}
+  .modal-overlay {
+     display: none;
+     position: fixed;
+     z-index: 2000;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     overflow: auto;
+     background-color: rgba(0, 0, 0, 0.5);
+     align-items: center;
+     justify-content: center;
+}
+  .modal-content {
+     background: rgb(255, 255, 255);
+     margin: auto;
+     width: 96%;
+     border-radius: 1rem;
+     padding-top: 15px;
+     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+}
+  .modal-header h5 {
+    margin: 0;
+}
+  .modal-header {
+     background: rgb(255, 255, 255);
+     padding: 0px 15px 15px;
+     text-align: center;
+}
+  .modal-body {
+     padding: 10px 20px;
+}
+  .closeBtn {
+     font-size: 20px;
+     color: #666;
+     float: right;
+}
+  .closeBtn:hover,  .closeBtn:focus {
+     color: #ef3942;
+     text-decoration: none;
+     cursor: pointer;
+}
+
+#simpleModal .theme_form-group {
+    margin-bottom: 10px;
+}
+
+/*filter dropdown*/
+.booking-categories__filter i, span{
+    pointer-events: none;
+}
+
+li.dd-item .btn-dark {
+    font-size: 14px;
+}
+
+span#closeBtncustom {
+    pointer-events: auto;
+}
+
+#filterDropDown {
+    position: absolute;
+     top: 100%;
+     left: auto;
+     right: 0;
+     background-color: #fff;
+     list-style-type: none;
+     margin: 0;
+     padding: 10px !important;
+     border: 1px solid #ddd;
+     z-index: 10;
+     display: none;
+     min-width: 200px;
+     overflow: hidden;
+     border-radius: 0.5rem;
+}
+
+ @media screen and (max-width: 1200px) {
+      .searching_column {
+         padding: 0 6px;
+         /*width: 22%;*/
+    }
+      label {
+         display: inline-block;
+         margin-bottom: 0.15rem;
+         font-size: 11px;
+    }
+      .theme__form-control {
+         padding: 5px 15px 5px 0;
+         font-size: 11px;
+         height: 35px;
+
+    }
+}
+
+@media screen and (max-width: 991px) {
+     .desktop-fields {
+        display: none !important;
+    }
+     #addedFieldsModals {
+        display: block;
+    }
+
+.theme__form-control {
+    border: 1px solid #ddd;
+}
+
+.theme__form-control {
+    padding: 5px 15px 5px 10px;
+}
+
+}
+
+ @media screen and (max-width: 767px) {
+      .booking-categories__list .slick-arrow {
+         width: 20px;
+         box-shadow: 5px 5px 8px 8px #fff;
+    }
+      .booking-categories__filter {
+         margin-left: 5px;
+         margin-bottom: 15px;
+    }
+      .booking-categories__filter i {
+         margin-right: 0px;
+    }
+      .booking-categories__filter span {
+         display: none;
+    }
+      .booking__slide-item img {
+         height: 250px;
+    }
+      .booking-categories__list a img {
+         width: 26px;
+         margin-bottom: 5px;
+    }
+      .booking-categories__list a {
+         padding: 0 6px;
+    }
+      .booking-categories__list a p {
+         font-size: 10px;
+    }
+     .booking-categories__section {
+         padding-top: 10px;
+         margin-top: 10px;
+    }
+    .dd-btn i.fa-bars {
+        display: none;
+    }
+    .booking__listing-section {
+        padding: 32px 0 32px 0;
+    }
+
+.header-v2__logo {
+    max-width: 70px;
+    width: 100%;
+}
+}
+
+.onl_ser {
+    width: auto;
+    background: #000;
+    border-radius: 0px 40px 40px 0px;
+    height: 40px;
+}
+
+.onl_ser button[type="submit"] {
+    width: 30px;
+    color: #fff;
+    background: transparent;
+    border: 0;
+    line-height: 38px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.theme__select-wrapper::after {
+    width: 10px;
+    height: 10px;
+}
+
+.theme__select-wrapper select {
+    appearance: none;
+    width: 100%;
+    cursor: pointer;
+    padding: 0px 10px;
+    line-height: 18px;
+}
+
+.header-v2__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+
