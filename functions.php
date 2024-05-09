@@ -15,6 +15,7 @@ if (version_compare($GLOBALS['wp_version'], '5.3', '<')) {
     require get_template_directory() . '/inc/back-compat.php';
 }
 
+
 if (!function_exists('twenty_twenty_one_setup')) {
     /**
      * Sets up theme defaults and registers support for various WordPress features.
@@ -1478,7 +1479,6 @@ function set_priority_fee($cart)
         $fee_amount  = WC()->session->get('rentatesla');
         $cart->add_fee($fee_label, $fee_amount);
     }
-
 }
 
 //=================================ElectricBike Fee AJAX======================================================
@@ -1504,7 +1504,6 @@ function set_priority_electricbike_fee($cart)
         $fee_amount  = WC()->session->get('electricbike');
         $cart->add_fee($fee_label, $fee_amount);
     }
-
 }
 
 //=================================Earlyin Fee AJAX======================================================
@@ -1530,7 +1529,6 @@ function set_priority_earlyin_fee($cart)
         $fee_amount  = WC()->session->get('earlyin');
         $cart->add_fee($fee_label, $fee_amount);
     }
-
 }
 
 //=================================Late Checkout Fee AJAX======================================================
@@ -1556,7 +1554,6 @@ function set_priority_latecheckout_fee($cart)
         $fee_amount  = WC()->session->get('latecheckout');
         $cart->add_fee($fee_label, $fee_amount);
     }
-
 }
 
 //=================================Spacialoffer Fee AJAX======================================================
@@ -1582,7 +1579,6 @@ function set_priority_spacialoffer_fee($cart)
         $fee_amount  = WC()->session->get('spacialoffer');
         $cart->add_fee($fee_label, $fee_amount);
     }
-
 }
 
 
@@ -1593,20 +1589,15 @@ function priority_fee_js_script()
 {
     if (is_wc_endpoint_url('order-received') && WC()->session->__isset('rentatesla')) {
         WC()->session->__unset('rentatesla');
-    } 
-    elseif (is_wc_endpoint_url('order-received') && WC()->session->__isset('electricbike')) {
+    } elseif (is_wc_endpoint_url('order-received') && WC()->session->__isset('electricbike')) {
         WC()->session->__unset('electricbike');
-    } 
-    elseif (is_wc_endpoint_url('order-received') && WC()->session->__isset('earlyin')) {
+    } elseif (is_wc_endpoint_url('order-received') && WC()->session->__isset('earlyin')) {
         WC()->session->__unset('earlyin');
-    } 
-    elseif (is_wc_endpoint_url('order-received') && WC()->session->__isset('latecheckout')) {
+    } elseif (is_wc_endpoint_url('order-received') && WC()->session->__isset('latecheckout')) {
         WC()->session->__unset('latecheckout');
-    } 
-    elseif (is_wc_endpoint_url('order-received') && WC()->session->__isset('spacialoffer')) {
+    } elseif (is_wc_endpoint_url('order-received') && WC()->session->__isset('spacialoffer')) {
         WC()->session->__unset('spacialoffer');
-    } 
-    elseif (is_cart()) {
+    } elseif (is_cart()) {
 
     ?>
         <script>
@@ -1669,7 +1660,7 @@ function priority_fee_js_script()
                         }
                     });
                 });
-                
+
                 $(document).delegate('input[name="earlyin"]', 'click', function() {
                     let isChecked = $(this).prop('checked');
                     let earlyin = $(this).prop('checked') ? $(this).val() : '';
@@ -1778,7 +1769,8 @@ function priority_fee_js_script()
 
 
 // Define a custom callback function to modify the comment form arguments
-function custom_comment_form_args($comment_form_args) {
+function custom_comment_form_args($comment_form_args)
+{
     // Change the title of the comment form
     $comment_form_args['title_reply'] = __('Write Your Review', 'theprattvillas');
     $comment_form_args['label_submit'] = __('Submit Review', 'theprattvillas');
@@ -1794,7 +1786,8 @@ add_filter('woocommerce_product_review_comment_form_args', 'custom_comment_form_
 # dynamically generated, and should only be modified via WordPress filters.
 # Any changes to the directives between these markers will be overwritten.
 
-function exclude_posts_by_titles($where, $query) {
+function exclude_posts_by_titles($where, $query)
+{
     global $wpdb;
 
     if (is_admin() && $query->is_main_query()) {

@@ -13,6 +13,7 @@
  */
 
 ?>
+
 </main><!-- #main -->
 </div><!-- #primary -->
 </div><!-- #content -->
@@ -157,7 +158,7 @@
                     color: white;
                     font-size: 12px;
                     padding-bottom: 10px;
-                   /* margin-bottom: 15px;
+                    /* margin-bottom: 15px;
                     height: 45px;*/
                     border-bottom: 1px solid #928a8a;
                     line-height: revert;
@@ -242,7 +243,7 @@
             </div>
 
 
-                        <div class="col-md-2 col-sm-6">
+            <div class="col-md-2 col-sm-6">
                 <?php if (have_rows('luxury_rental_section', 'option')) :
                     while (have_rows('luxury_rental_section', 'option')) : the_row();
                         if (get_row_layout() == 'add_row') : ?>
@@ -302,7 +303,7 @@
             </div>
 
 
-             <div class="col-md-2 col-sm-6">
+            <div class="col-md-2 col-sm-6">
                 <?php if (have_rows('property_managment_section', 'option')) :
                     while (have_rows('property_managment_section', 'option')) : the_row();
                         if (get_row_layout() == 'add_row') : ?>
@@ -343,7 +344,7 @@
 
 
 
-               <div class="col-md-2 col-sm-6">
+            <div class="col-md-2 col-sm-6">
                 <?php if (have_rows('relocation_consulting_section', 'option')) :
                     while (have_rows('relocation_consulting_section', 'option')) : the_row();
                         if (get_row_layout() == 'add_row') : ?>
@@ -366,7 +367,7 @@
 
 
 
-           
+
 
             <div class="col-md-2 col-sm-6">
                 <?php if (have_rows('design_consulting_section', 'option')) :
@@ -374,13 +375,15 @@
                         if (get_row_layout() == 'add_row') : ?>
                             <h2>DESIGN <br>CONSULTING</h2>
                             <ul>
-                                <?php $designcount = 1; foreach (get_sub_field('design_consulting_list', 'option') as $design_consulting_list) : ?>
-                                    <?php if($designcount <= 3): ?><li><a href="<?php echo $design_consulting_list['link']['url']; ?>"><?php echo $design_consulting_list['link']['title']; ?></a></li>
+                                <?php $designcount = 1;
+                                foreach (get_sub_field('design_consulting_list', 'option') as $design_consulting_list) : ?>
+                                    <?php if ($designcount <= 3) : ?><li><a href="<?php echo $design_consulting_list['link']['url']; ?>"><?php echo $design_consulting_list['link']['title']; ?></a></li>
                                     <?php endif; ?>
-                                <?php $designcount++; endforeach; ?>
+                                <?php $designcount++;
+                                endforeach; ?>
 
 
-                                  <a class="read-more-show hide" href="#" id="2">MORE
+                                <a class="read-more-show hide" href="#" id="2">MORE
 
                                     <svg width="13" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M7.063 8.938L.5 8.5a.5.5 0 0 1 0-1l6.563-.438L7.5.5a.5.5 0 0 1 1 0l.438 6.563L15.5 7.5a.5.5 0 0 1 0 1l-6.563.438L8.5 15.5a.5.5 0 0 1-1 0l-.438-6.563z"></path>
@@ -395,7 +398,7 @@
                                     <?php $designcounts++;
                                     endforeach; ?>
 
-                            
+
                                     <a class="read-more-hide hide" href="#" more-id="2">LESS
 
                                         <svg width="13" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -416,35 +419,35 @@
 
 
 
-        <div class="col-md-2 col-sm-6">
-              
-                            <h2>Quick <br>Links</h2>
-                            <ul class="col-align">
-                            <li><a href="#">TENANTS HUB</a></li>
-                            <li><a href="#">OWNERS HUB</a></li>
-                            <li><a href="#">GLOBAL RELOC</a></li>
-                            <a class="read-more-show" href="#" id="3">MORE
+            <div class="col-md-2 col-sm-6">
 
-                                    <svg width="13" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.063 8.938L.5 8.5a.5.5 0 0 1 0-1l6.563-.438L7.5.5a.5.5 0 0 1 1 0l.438 6.563L15.5 7.5a.5.5 0 0 1 0 1l-6.563.438L8.5 15.5a.5.5 0 0 1-1 0l-.438-6.563z"></path>
-                                    </svg>
-                                </a>
-                                <span class="read-more-content">
-                                    
-                                <li><a href="#">TRANSPORTATION</a></li>
-                                <li><a href="#">RENTAL APP</a></li>
-                                <li><a href="#">LEASE AGRMT</a></li>
-                                 <li><a href="#">MAINTENANCE</a></li>
-                            
-                                    <a class="read-more-hide" href="#" more-id="3">LESS
+                <h2>Quick <br>Links</h2>
+                <ul class="col-align">
+                    <li><a href="#">TENANTS HUB</a></li>
+                    <li><a href="#">OWNERS HUB</a></li>
+                    <li><a href="#">GLOBAL RELOC</a></li>
+                    <a class="read-more-show" href="#" id="3">MORE
 
-                                        <svg width="13" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M7.063 8.938L.5 8.5a.5.5 0 0 1 0-1l6.563-.438L7.5.5a.5.5 0 0 1 1 0l.438 6.563L15.5 7.5a.5.5 0 0 1 0 1l-6.563.438L8.5 15.5a.5.5 0 0 1-1 0l-.438-6.563z"></path>
-                                        </svg>
-                                    </a>
-                                </span>
-                            
-                            </ul>
+                        <svg width="13" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.063 8.938L.5 8.5a.5.5 0 0 1 0-1l6.563-.438L7.5.5a.5.5 0 0 1 1 0l.438 6.563L15.5 7.5a.5.5 0 0 1 0 1l-6.563.438L8.5 15.5a.5.5 0 0 1-1 0l-.438-6.563z"></path>
+                        </svg>
+                    </a>
+                    <span class="read-more-content">
+
+                        <li><a href="#">TRANSPORTATION</a></li>
+                        <li><a href="#">RENTAL APP</a></li>
+                        <li><a href="#">LEASE AGRMT</a></li>
+                        <li><a href="#">MAINTENANCE</a></li>
+
+                        <a class="read-more-hide" href="#" more-id="3">LESS
+
+                            <svg width="13" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.063 8.938L.5 8.5a.5.5 0 0 1 0-1l6.563-.438L7.5.5a.5.5 0 0 1 1 0l.438 6.563L15.5 7.5a.5.5 0 0 1 0 1l-6.563.438L8.5 15.5a.5.5 0 0 1-1 0l-.438-6.563z"></path>
+                            </svg>
+                        </a>
+                    </span>
+
+                </ul>
             </div>
 
 
@@ -1279,9 +1282,9 @@
         }, 100);
 
     });
-    setTimeout(function(){
-       jQuery("#share-button").show(); 
-    },1500);
+    setTimeout(function() {
+        jQuery("#share-button").show();
+    }, 1500);
 </script>
 <?php wp_footer(); ?>
 

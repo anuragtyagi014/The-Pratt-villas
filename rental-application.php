@@ -21,11 +21,12 @@ get_header();
     </div>
 </section> -->
 
+
 <section class="page_main_head_title">
     <div class="row">
         <div class="container">
             <div class="main_tit_new_corp">
-                <h3>Rental  Application</h3>
+                <h3>Rental Application</h3>
             </div>
         </div>
     </div>
@@ -34,28 +35,25 @@ get_header();
 <!-- Newsletter Section End -->
 <main-new class="make_header-light">
 
-  <div class="container-fluid">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
                 <div class="back-btn" style="padding-bottom: 0px;padding-top: 30px;text-align: left; position:absolute">
-                 <a href="javascript:history.go(-1)"onMouuseOver="self.status.referrer; return true">
-                    <button class="grid__button"
-                       style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-                       <div class="cicled__btn">
-                          <svg viewBox="0 0 24 24" class="circled__btn-outer">
-                             <circle cx="12" cy="12" r="11" stroke="1" style=""></circle>
-                          </svg>
-                          <svg viewBox="0 0 8 16" class="circled__btn-arrow" width="8" height="16"
-                             xmlns="http://www.w3.org/2000/svg" style="height: 16px; width: 8px;">
-                             <path
-                                d="M7.268 9.547L0 16l4-8-4-8 7.268 6.453C7.715 6.82 8 7.377 8 8c0 .623-.285 1.18-.732 1.547z">
-                             </path>
-                          </svg>
-                       </div>
-                       Back
-                    </button>
-                 </a>
-              </div>
+                    <a href="javascript:history.go(-1)" onMouuseOver="self.status.referrer; return true">
+                        <button class="grid__button" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                            <div class="cicled__btn">
+                                <svg viewBox="0 0 24 24" class="circled__btn-outer">
+                                    <circle cx="12" cy="12" r="11" stroke="1" style=""></circle>
+                                </svg>
+                                <svg viewBox="0 0 8 16" class="circled__btn-arrow" width="8" height="16" xmlns="http://www.w3.org/2000/svg" style="height: 16px; width: 8px;">
+                                    <path d="M7.268 9.547L0 16l4-8-4-8 7.268 6.453C7.715 6.82 8 7.377 8 8c0 .623-.285 1.18-.732 1.547z">
+                                    </path>
+                                </svg>
+                            </div>
+                            Back
+                        </button>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -77,10 +75,10 @@ get_header();
                 </a>
             </li>
             <li>
-                <a href="rental-application"  target="_blank"  target="_blank"  style="color: #333 !important;font-weight: 500;">
+                <a href="rental-application" target="_blank" target="_blank" style="color: #333 !important;font-weight: 500;">
                     <div class="cicled__btn">
                         <svg viewBox="0 0 24 24" class="circled__btn-outer">
-                            <circle  style="stroke: #da291c !important; display: block !important;stroke-dasharray: 140;
+                            <circle style="stroke: #da291c !important; display: block !important;stroke-dasharray: 140;
     transition: 350ms;" cx="12" cy="12" r="11" stroke="1" style=""></circle>
                         </svg>
                         <svg viewBox="0 0 8 16" class="circled__btn-arrow" width="6" height="12" xmlns="http://www.w3.org/2000/svg" style="height: 12px; width: 6px;">
@@ -91,7 +89,7 @@ get_header();
                 </a>
             </li>
             <li class="active">
-                <a href="residential-rental-contract"  target="_blank" target="_blank">
+                <a href="residential-rental-contract" target="_blank" target="_blank">
                     <div class="cicled__btn">
                         <svg viewBox="0 0 24 24" class="circled__btn-outer">
                             <circle cx="12" cy="12" r="11" stroke="1" style=""></circle>
@@ -171,37 +169,34 @@ get_header();
         </ol>
     </nav>
     <style type="text/css">
-                .section-nav li.active>a {
-    color: #ccc;
-    font-weight: 500;
-}
+        .section-nav li.active>a {
+            color: #ccc;
+            font-weight: 500;
+        }
 
 
 
-.main_input_data_form input {
-    color: #7b7b7b !important;
-}
-
-
+        .main_input_data_form input {
+            color: #7b7b7b !important;
+        }
     </style>
     <div class="con_sec_new new_class_for_wid_full rental_new_page_d">
         <section class="manin_tab_tenant_portal" id="rental-application">
-        <div class="container">
-         <h2 style="visibility: hidden;">Rental Application</h2>
-         <div class="tab_con_man real_estates__content main_input_data_form">
-            <div class="tow-sec">
-               <div class="left_img_ne_pg">
-                  <img src="https://theprattvillas.com/wp-content/uploads/2023/05/left1.webp"
-                     alt="img">
-               </div>
-               <div class="tab_form_right">
-                  <?php echo apply_shortcodes( '[gravityform id="1" title="true"]' ); ?>
-               </div>
-            </div>
-         </div>
-      </section>
+            <div class="container">
+                <h2 style="visibility: hidden;">Rental Application</h2>
+                <div class="tab_con_man real_estates__content main_input_data_form">
+                    <div class="tow-sec">
+                        <div class="left_img_ne_pg">
+                            <img src="https://theprattvillas.com/wp-content/uploads/2023/05/left1.webp" alt="img">
+                        </div>
+                        <div class="tab_form_right">
+                            <?php echo apply_shortcodes('[gravityform id="1" title="true"]'); ?>
+                        </div>
+                    </div>
+                </div>
+        </section>
 
     </div>
 
 </main-new>
-<?php  get_footer(); ?>
+<?php get_footer(); ?>

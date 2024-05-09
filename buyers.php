@@ -1,12 +1,13 @@
-<?php 
+<?php
 
-/* Template Name: Buyers */ 
+/* Template Name: Buyers */
 
 
 
 get_header();
 
 ?>
+
 
 
 
@@ -28,15 +29,15 @@ get_header();
 
 
 
-<section class="property__features make_header-light for-all-ani "> 
+<section class="property__features make_header-light for-all-ani ">
 
     <div class="container">
 
-        <div class="row"> 
+        <div class="row">
 
-        	<div class="col-md-12 col-lg-6 fades-left" data-aos="fade-right" style="padding: 0px;">
+            <div class="col-md-12 col-lg-6 fades-left" data-aos="fade-right" style="padding: 0px;">
 
-             <img src="<?php echo esc_url( get_field( 'image' ) ); ?>"style="width: 100%;height: 100%;object-fit: cover;">   
+                <img src="<?php echo esc_url(get_field('image')); ?>" style="width: 100%;height: 100%;object-fit: cover;">
 
             </div>
 
@@ -44,9 +45,9 @@ get_header();
 
                 <div class="real_estates__content manin_tab_tenant_portal">
 
-                    	
 
-					<?php echo apply_shortcodes( get_field( 'form_code' ) ); ?>
+
+                    <?php echo apply_shortcodes(get_field('form_code')); ?>
 
 
 
@@ -66,4 +67,4 @@ get_header();
 
 
 
-<?php  get_footer(); ?>
+<?php get_footer(); ?>

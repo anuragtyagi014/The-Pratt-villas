@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-/* Template Name: About Us Template */ 
+/* Template Name: About Us Template */
 
 
 
@@ -10,376 +10,376 @@ get_header();
 
 
 
+
 <style type="text/css">
+    .design-consulting::After {
 
-.design-consulting::After {
+        position: absolute;
 
-    position: absolute;
+        content: "";
 
-    content: "";
+        inset: 0;
 
-    inset: 0;
+        background-color: #24242a80;
 
-    background-color: #24242a80;
+        z-index: -1;
 
-    z-index: -1;
+    }
 
-}
+    .design-consulting {
 
-.design-consulting {
+        /*    padding: 230px 0 160px 0;*/
 
-/*    padding: 230px 0 160px 0;*/
+        background-position: 100% 66%;
 
-    background-position: 100% 66%;
+    }
 
-}
 
 
+    .design-consulting h3 {
 
-.design-consulting h3 {
+        color: #fff;
 
-    color: #fff;
+        text-align: center;
 
-    text-align: center;
+        /*    font-size: 36px;*/
 
-/*    font-size: 36px;*/
+    }
 
-}
 
 
+    section.absec {
 
-section.absec {
+        padding: 70px 70px;
 
-    padding: 70px 70px;
+    }
 
-}
+    .absec .col-lg-12 {
 
-.absec .col-lg-12 {
+        max-width: 82%;
 
-    max-width: 82%;
+        margin: 0 auto;
 
-    margin: 0 auto;
+        display: block;
 
-    display: block;
+        text-align: justify;
 
-    text-align: justify;
+    }
 
-}
 
 
+    .absec .col-lg-12 span {
 
-.absec .col-lg-12 span {
+        color: #da291c;
 
-    color: #da291c;
+        text-align: justify;
 
-    text-align: justify;
+        display: block;
 
-    display: block;
+        text-transform: uppercase;
 
-    text-transform: uppercase;
+    }
 
-}
 
 
+    .absec .col-lg-12 h4 {
 
-.absec .col-lg-12 h4 {
+        font-size: 36px;
 
-    font-size: 36px;
+        margin: 10px 0 20px;
 
-    margin: 10px 0 20px;
+    }
 
-}
 
 
+    section.servsec {
 
-section.servsec {
+        padding: 20px 0 100px;
 
-    padding: 20px 0 100px;
+    }
 
-}
 
 
+    .content {
 
-.content {
+        width: 100%;
 
-    width: 100%;
+        height: 100%;
 
-    height: 100%;
+        background-color: #333;
 
-    background-color: #333;
+        padding: 40px;
 
-    padding: 40px;
+        display: flex;
 
-    display: flex;
+        flex-direction: column;
 
-    flex-direction: column;
+        align-items: start;
 
-    align-items: start;
+        justify-content: center;
 
-    justify-content: center;
+    }
 
-}
+    .imgbx img {
 
-.imgbx img {
+        height: 344px;
 
-    height: 344px;
+        object-fit: cover;
 
-    object-fit: cover;
+        width: 100%;
 
-    width: 100%;
+    }
 
-}
 
 
+    .content h3 {
 
-.content h3 {
+        color: #fff;
 
-    color: #fff;
+        font-size: 28px;
 
-    font-size: 28px;
+        text-align: left;
 
-    text-align: left;
+    }
 
-}
+    .content p {
 
-.content p {
+        color: #fff;
 
-    color: #fff;
+        line-height: 26px;
 
-    line-height: 26px;
+        text-align: left;
 
-    text-align: left;
+    }
 
-}
+    .row.secrow {
 
-.row.secrow {
+        margin-top: 30px;
 
-    margin-top: 30px;
+    }
 
-}
+    section.servsec {
 
-section.servsec {
+        padding: 60px 0 100px;
 
-    padding: 60px 0 100px;
+        background-image: url(<?php echo get_field('section2_bg_image'); ?>);
 
-    background-image: url(<?php echo get_field( 'section2_bg_image' ); ?>);
+        background-size: cover;
 
-    background-size: cover;
+        background-repeat: no-repeat;
 
-    background-repeat: no-repeat;
+        position: relative;
 
-    position: relative;
+    }
 
-}
+    section.servsec:after {
 
-section.servsec:after {
+        background-color: #33333385;
 
-    background-color: #33333385;
+        position: absolute;
 
-    position: absolute;
+        content: "";
 
-    content: "";
+        z-index: 8;
 
-    z-index: 8;
+        width: 100%;
 
-    width: 100%;
+        left: 0;
 
-    left: 0;
+        right: 0;
 
-    right: 0;
+        top: 0;
 
-    top: 0;
+        bottom: 0;
 
-    bottom: 0;
+    }
 
-}
+    section.servsec .container {
 
-section.servsec .container{
+        z-index: 9;
 
-    z-index: 9;
+        position: relative;
 
-    position: relative;
+    }
 
-}
+    a.content_slide-read-more {
 
-a.content_slide-read-more {
+        opacity: unset !important;
 
-    opacity: unset !important;
+    }
 
-}
 
 
+    .spacing {
 
-.spacing {
+        margin-top: 0px;
 
-    margin-top: 0px;
+    }
 
-}
 
 
+    .servsec .grid_item {
 
-.servsec .grid_item {
+        padding: 0;
 
-    padding:0;
+        height: 364px;
 
-    height: 364px;
+    }
 
-}
 
 
+    @media (max-width:1024px) {
 
-@media (max-width:1024px){
+        .design-consulting {
 
-.design-consulting {
+            /*    padding: 160px 0 160px 0;*/
 
-/*    padding: 160px 0 160px 0;*/
+        }
 
-}
+        .absec .col-lg-12 {
 
-.absec .col-lg-12 {
+            max-width: 100%;
 
-    max-width: 100%;
+        }
 
-}
+        .servsec .grid_item {
 
-.servsec .grid_item {
+            height: 425px;
 
-    height: 425px;
+        }
 
-}
+    }
 
-}
 
 
 
 
+    @media (max-width:991px) {
 
-@media (max-width:991px){
 
 
+        .flex_prop {
 
-.flex_prop {
+            flex-direction: column-reverse;
 
-    flex-direction: column-reverse;
+        }
 
-}
+        .about_img {
 
-.about_img {
+            padding-bottom: 30px;
 
-    padding-bottom: 30px;
+        }
 
-}
 
 
 
 
 
 
+    }
 
-}
 
 
 
 
 
 
+    @media (max-width:768px) {
 
-@media (max-width:768px){
 
 
+        .absec .col-lg-12 {
 
-.absec .col-lg-12 {
+            max-width: 100%;
 
-    max-width: 100%;
+        }
 
-}
+        section.absec {
 
-section.absec {
+            padding: 50px 0;
 
-    padding: 50px 0;
+        }
 
-}
 
 
+        .row:nth-child(1),
+        .row:nth-child(3) {
 
-.row:nth-child(1),.row:nth-child(3) {
+            flex-direction: column-reverse;
 
-    flex-direction: column-reverse;
+        }
 
-}
+        .absec .col-lg-12 h4 {
 
-.absec .col-lg-12 h4 {
+            font-size: 36px;
 
-    font-size: 36px;
+        }
 
-}
+        .design-consulting h3 {
 
-.design-consulting h3 {
+            /*    font-size: 36px;*/
 
-/*    font-size: 36px;*/
+            /*    margin-top: 30px;*/
 
-/*    margin-top: 30px;*/
+        }
 
-}
 
 
+        .servsec .grid_item {
 
-.servsec .grid_item {
+            height: 364px;
 
-    height: 364px;
+        }
 
-}
 
 
+    }
 
-}
 
 
+    @media (max-width:567px) {
 
-@media (max-width:567px){
 
 
+        .content_slider-section .container {
 
-.content_slider-section .container {
+            max-width: calc(100% - 30px);
 
-    max-width: calc(100% - 30px);
+        }
 
-}
+        .absec .col-lg-12 h4 {
 
-.absec .col-lg-12 h4 {
+            font-size: 24px;
 
-    font-size: 24px;
+        }
 
-}
+        .content {
 
-.content {
+            padding: 30px 20px;
 
-    padding: 30px 20px;
+        }
 
-}
+        .design-consulting {
 
-.design-consulting {
+            /*    padding: 100px 0 100px 0;*/
 
-/*    padding: 100px 0 100px 0;*/
+        }
 
-}
+        .content h3 {
 
-.content h3 {
+            font-size: 28px;
 
-    font-size: 28px;
+        }
 
-}
+        .design-consulting h3 {
 
-.design-consulting h3 {
-
-    /*font-size: 28px;
+            /*font-size: 28px;
 
     margin-top: 40px;*/
 
-}
+        }
 
-}
-
+    }
 </style>
 
 
@@ -390,11 +390,12 @@ section.absec {
 
 
 
-<!-- <section class="page__header design-consulting make_header-dark" style="background-image:url(<?php echo get_field( 'bg_image' ); ?>)">
+<!-- <section class="page__header design-consulting make_header-dark" style="background-image:url(<?php echo get_field('bg_image'); ?>)">
 
     <div class="container">
 
-        <h3 class="grid__heading"><?///php echo get_field( 'main_heading' ); ?></h3>
+        <h3 class="grid__heading"><? ///php echo get_field( 'main_heading' ); 
+                                    ?></h3>
 
     </div>
 
@@ -403,10 +404,10 @@ section.absec {
 <section class="page_main_head_title">
     <div class="row">
         <div class="container">
-          
-                <div class="main_tit_new_corp">
-                    <h3>KAMAL HOSPITALITY GROUP <span>Presents</span></h3>
-                </div>
+
+            <div class="main_tit_new_corp">
+                <h3>KAMAL HOSPITALITY GROUP <span>Presents</span></h3>
+            </div>
 
         </div>
     </div>
@@ -433,11 +434,11 @@ section.absec {
 
             <div class="col-lg-6">
 
-                <h4 class="for-txt-ani"><?php echo get_field( 'section1_heading' ); ?></h4>
+                <h4 class="for-txt-ani"><?php echo get_field('section1_heading'); ?></h4>
 
                 <br>
 
-                <p class="for-txt-ani"><?php echo get_field( 'section1_text' ); ?></p>
+                <p class="for-txt-ani"><?php echo get_field('section1_text'); ?></p>
 
 
 
@@ -473,7 +474,7 @@ section.absec {
 
             <div class="col-md-6">
 
-                <img class="about_img" src="<?php echo get_field( 'section1_image' ); ?>">
+                <img class="about_img" src="<?php echo get_field('section1_image'); ?>">
 
             </div>
 
@@ -495,9 +496,9 @@ section.absec {
 
                 <div class="content">
 
-                    <h3 class="" data-aos="fade-down" data-aos-duration="2000"><?php echo get_field( 'section2_heading' ); ?></h3>
+                    <h3 class="" data-aos="fade-down" data-aos-duration="2000"><?php echo get_field('section2_heading'); ?></h3>
 
-                    <p class="" data-aos="fade-down" data-aos-duration="2000"><?php echo get_field( 'section2_text' ); ?></p>
+                    <p class="" data-aos="fade-down" data-aos-duration="2000"><?php echo get_field('section2_text'); ?></p>
 
 
 
@@ -509,9 +510,7 @@ section.absec {
 
                 <div class="grid__column">
 
-                    <div class="grid_item"
-
-                        style="background-image:url(<?php echo get_field( 'section2_image' ); ?>);">
+                    <div class="grid_item" style="background-image:url(<?php echo get_field('section2_image'); ?>);">
 
                     </div>
 
@@ -535,21 +534,21 @@ section.absec {
 
         <div class="row flex_prop">
 
-            
+
 
             <div class="col-md-6">
 
-                <img class="about_img akg" src="<?php echo get_field( 'section3_image' ); ?>">
+                <img class="about_img akg" src="<?php echo get_field('section3_image'); ?>">
 
             </div>
 
             <div class="col-lg-6">
 
-                <h4 class="for-txt-ani"><?php echo get_field( 'section3_heading' ); ?></h4>
+                <h4 class="for-txt-ani"><?php echo get_field('section3_heading'); ?></h4>
 
                 <br>
 
-                <p class="for-txt-ani"><?php echo get_field( 'section3_text' ); ?></p>
+                <p class="for-txt-ani"><?php echo get_field('section3_text'); ?></p>
 
 
 
@@ -596,7 +595,7 @@ section.absec {
             </div>
         </div>
         <div class="row">
-            <?php foreach(get_field('list_of_person') as $list_of_person){ ?>
+            <?php foreach (get_field('list_of_person') as $list_of_person) { ?>
                 <div class="col-md-4">
                     <div class="user_inner_box">
                         <div class="user_imk">
@@ -619,4 +618,4 @@ section.absec {
 
 
 
-<?php  get_footer(); ?>
+<?php get_footer(); ?>
